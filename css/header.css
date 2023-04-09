@@ -15,28 +15,19 @@
     justify-content: space-between;
     align-items: center;
     transition: 0.8s;
-
-}
-
-.header__wrapper-scroll {
-    height: 50px;
-    transition: 0.8s;
 }
 
 .header__logo {
-    height: 76px;
+    width: 56px;
     display: inline-block;
-}
-
-.header__logo-scroll {
-    margin-right: 19px;
-    height: 32px;
-    display: inline-block;
-    background-image: url(../img/logo_white_symbol.png);
 }
 
 .header__logo-img {
-    height: inherit;
+    width: inherit;
+}
+
+.header__logo-img_small {
+    width: inherit;
 }
 
 .header__nav-item {
