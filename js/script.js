@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
           mainSection = document.querySelector('.main');
 
     window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop >= (mainSection.offsetHeight - navBar.offsetHeight)) {
+        if (document.documentElement.scrollTop > mainSection.offsetHeight - 100) {
             navBar.style.height = '50px';
             headerLogo.innerHTML = `
             <img  class="header__logo-img_small" src="img/logo_white_symbol.png" alt="pravda coffee">

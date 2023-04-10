@@ -1,5 +1,6 @@
 .menu {
     position: sticky;
+    overflow: hidden;
     top: 50px;
 }
 

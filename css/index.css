@@ -49,7 +49,7 @@ body {
     color: #FFFFFF;
     background-color: rgb(227, 114, 0);
     display: inline-block;
-    transition: all 0.3s, color 0.3s;
+    transition: all 0.3s;
     border-radius: 42px;
     border: none;
 }

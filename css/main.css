@@ -24,7 +24,9 @@
     line-height: 55px;
 }
 
-.main__btn {
+a.main__btn {
     font-size: 30px;
     margin-top: 30px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 147, 40);
 }
