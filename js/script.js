@@ -1,21 +1,31 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const navBar = document.querySelector('.header__wrapper'),
-          headerLogo = document.querySelector('.header__logo'),
+    const header = document.querySelector('.header'),
+          navBar = document.querySelector('.header__wrapper'),
+          headerLogoImage = document.querySelector('.header__logo-img'),
           mainSection = document.querySelector('.main');
+          
 
-    window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop > mainSection.offsetHeight - 100) {
-            navBar.style.height = '50px';
-            headerLogo.innerHTML = `
-            <img  class="header__logo-img_small" src="img/logo_white_symbol.png" alt="pravda coffee">
-            `;
+    window.addEventListener('resize', hideNavbar);
+    window.addEventListener('scroll', hideNavbar);
+
+    function hideNavbar() {
+        if (document.documentElement.scrollTop > mainSection.offsetHeight - 100 && navBar.offsetWidth > 930) {
+            navBar.classList.add('header__wrapper_short');
+            headerLogoImage.setAttribute('src', 'img/logo_white_symbol.png');
+            header.classList.add('header_short');
+        } else if (document.documentElement.scrollTop > mainSection.offsetHeight - 80 && navBar.offsetWidth < 960){
+            navBar.classList.add('header__wrapper_short');
+            headerLogoImage.setAttribute('src', 'img/logo_white_symbol.png');
+            header.classList.add('header_short');
         } else {
-            navBar.style.height = '100px';
-            headerLogo.innerHTML = `
-            <img  class="header__logo-img" src="img/logo_white.png" alt="pravda coffee">
-            `;
-        }
-    });
+            navBar.classList.remove('header__wrapper_short');
+            headerLogoImage.setAttribute('src', 'img/logo_white.png');
+            header.classList.remove('header_short');
+        } 
+    }
+
+
 });
+
