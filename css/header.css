@@ -1,16 +1,15 @@
 .header {
     width: 100%;
-    background-color: #0000007d;
+    background-color: #01010133;
     position: fixed;
     top: 0;
     z-index: 99;
     overflow: hidden;
     backdrop-filter: blur(4px);
-    transition: background-color 0.3s;
 }
 
 .header_short {
-    background-color: #151515;
+    background-color: #212121;
 }
 
 .header__wrapper {
