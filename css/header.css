@@ -1,15 +1,11 @@
 .header {
     width: 100%;
-    background-color: #01010133;
+    background-color: #01010182;
     position: fixed;
     top: 0;
     z-index: 99;
     overflow: hidden;
     backdrop-filter: blur(4px);
-}
-
-.header_short {
-    background-color: #212121;
 }
 
 .header__wrapper {
@@ -18,10 +14,6 @@
     justify-content: space-between;
     align-items: center;
     transition: 0.8s;
-}
-
-div.header__wrapper_short {
-    height: 50px;
 }
 
 .header__logo {
@@ -56,6 +48,60 @@ div.header__wrapper_short {
     display: inline-block;
 }
 
+/* -------------------------------header after scroll*/
+
+.header_short {
+    background-color: #212121;
+}
+
+
+div.header__wrapper_short {
+    height: 50px;
+}
+
+a.header__nav-item_short {
+    position: relative;
+}
+
+a.header__nav-item_short:hover {
+    color: #d7d7d7;
+    background-color: transparent;
+}
+
+
+a.header__nav-item_short::after {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 23px;
+    width: 0;
+    height: 2px;
+    background-color: #d7d7d7;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+a.header__nav-item_short:hover:after,
+a.header__nav-item_short:focus:after {
+    width: calc(100% - 47px);
+}
+
+a.header__nav-item_colored {
+    color: rgb(227, 114, 0);
+}
+
+a.header__nav-item_colored:hover {
+    color: rgb(227, 114, 0);
+}
+
+a.header__nav-item_colored:after {
+    background-color: rgb(255, 147, 40);
+}
+
+a.header__nav-item_colored:hover:focus {
+    color: rgb(255, 147, 40);
+}
+
 /* -------------------------------media queries */
 
 @media screen and (max-width: 1024px){
@@ -79,9 +125,9 @@ div.header__wrapper_short {
 }
 
 @media screen and (max-width: 769px){
-    .header__nav-item {
-        margin-right: 20px;
-    }
+    /* nav.header__nav {
+        display: none;
+    } */
 }
 
 @media screen and (max-width: 375px){

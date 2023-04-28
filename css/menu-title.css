@@ -1,0 +1,10 @@
+.menu-title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu-title__title {
+    font-size: 28px;
+    font-weight: 600;
+    display: inline-block;
+}
