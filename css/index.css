@@ -1,0 +1,111 @@
+@import url(header.css);
+@import url(main.css);
+@import url(menu.css);
+@import url(menu_list.css);
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__item {
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 32px;
+  transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+/* buttons */
+.btn {
+  padding: 16px 28px 18px 28px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: rgb(227, 114, 0);
+  display: inline-block;
+  transition: all 0.3s;
+  border-radius: 42px;
+  border: none;
+}
+
+.btn:hover {
+  color: #000000;
+  background-color: rgb(255, 147, 40);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* sections */
+.section-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.gallery {
+  height: 400px;
+  background-color: #c95e5e;
+}
+
+.about {
+  height: 600px;
+  background-color: #9dcb59;
+}
+
+.contact {
+  height: 200px;
+  background-color: #5484c0;
+}
+
+.stock {
+  height: 300px;
+  background-color: #cc4ebb;
+}
+
+.footer {
+  height: 150px;
+  background-color: #4c3e3e;
+}

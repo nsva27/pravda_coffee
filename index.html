@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/index.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&display=swap"
+    rel="stylesheet">
+  <title>Nauchny coffee</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="img/logo_white.png" alt="pravda coffee">
+        </a>
+        <nav class="nav header__nav">
+          <a class="nav__item header__nav-item" href="javascript:void(0);" data-to="menu">Меню</a>
+          <a class="nav__item header__nav-item" href="javascript:void(0);" data-to="about">О нас</a>
+          <a class="nav__item header__nav-item" href="javascript:void(0);" data-to="gallery">Галерея</a>
+          <a class="nav__item header__nav-item" href="javascript:void(0);" data-to="contacts">Контакты</a>
+          <a class="nav__item header__nav-item header__nav-item_checked" href="javascript:void(0);"
+            data-to="stock">Акции</a>
+        </nav>
+        <img class="header__shopping-cart" src="img/icons/shopping_cart.svg" alt="shopping cart">
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+
+  <main class="main">
+    <div class="container">
+      <div class="main__wrapper">
+        <div class="main__offer">
+          <h1 class="main__offer-text">
+            Вкусный кофе <br> каждый день!
+          </h1>
+          <a class="btn main__btn" href="#">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- /main -->
+
+  <section class="menu">
+    <h2 class="section-title section-title_menu" id="menu">Меню</h2>
+    <!-- /menu__title -->
+    <div class="menu__navbar">
+      <div class="menu__navbar-wrapper">
+        <nav class="nav menu-section__nav">
+          <a class="nav__item menu__nav-item" href="javascript:void(0);" data-to="classic">Классика</a>
+          <a class="nav__item menu__nav-item" href="javascript:void(0);" data-to="author">Авторское</a>
+          <a class="nav__item menu__nav-item" href="javascript:void(0);" data-to="raf">Раф</a>
+          <a class="nav__item menu__nav-item" href="javascript:void(0);" data-to="fresh">Фреш</a>
+          <a class="nav__item menu__nav-item menu__nav-item_checked" href="javascript:void(0);"
+            data-to="season">Сезонное</a>
+        </nav>
+      </div>
+    </div>
+    <!-- /menu__navbar -->
+    <div class="menu__list">
+      <div class="container">
+        <div class="menu__list-wrapper">
+          <div class="menu__block">
+            <h2 class="menu__block-title" id="classic">Классика</h2>
+            <div class="menu__block-wrapper">
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Капучино</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/capucino.jpg" alt="capucino">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">250 мл</span><br>
+                      <span class="menu__item-price">90</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">140</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /capucino -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Латте</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/latte.jpg" alt="latte">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">250 мл</span><br>
+                      <span class="menu__item-price">90</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">140</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /latte -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Американо</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/americano.jpg" alt="americano">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">250 мл</span><br>
+                      <span class="menu__item-price">90</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">140</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /americano -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Флэт Уайт</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/flat_white.jpg" alt="flat white">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">250 мл</span><br>
+                      <span class="menu__item-price">90</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /flat white -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Эспрессо</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/esspreso.jpg" alt="esspreso">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">250 мл</span><br>
+                      <span class="menu__item-price">90</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /esspreso -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Мокко</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/mokko.jpg" alt="mokko">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">140</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /mokko -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Чай</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/chai.jpg" alt="chai">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">140</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /chai -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Какао</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/cacao.jpg" alt="cacao">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /cacao -->
+            </div>
+          </div>
+          <!-- /menu classic -->
+
+          <div class="menu__block">
+            <h2 class="menu__block-title" id="author">Авторское</h2>
+            <div class="menu__block-wrapper">
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Латте Кола</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/latte_cola.jpg" alt="latte cola">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /latte cola -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Пунш Чабрец</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/punsh_chabrets.jpg" alt="punsh">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /punsh chabrets  -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Матча Яблоко</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/matcha_apple.jpg" alt="matcha apple">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /matcha apple -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Латте Солёная Карамель</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/salt_caramel.jpg" alt="salt caramel">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /salt caramel -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Пряный Чай Латте</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/priany_chai.jpg" alt="priany chai latte">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /priany chai -->
+            </div>
+          </div>
+          <!-- /menu author -->
+
+          <div class="menu__block">
+            <h2 class="menu__block-title" id="raf">Раф</h2>
+            <div class="menu__block-wrapper">
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Раф Малиновый</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/raf.jpg" alt="raf">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /raf raspberry -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Раф Лавандовый</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/raf.jpg" alt="raf">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /raf lavender  -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Раф Апельсиновый</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/raf.jpg" alt="raf">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /raf orange -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Раф Классический</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/raf.jpg" alt="raf">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /raf classic -->
+            </div>
+          </div>
+          <!-- /menu raf -->
+
+          <div class="menu__block">
+            <h2 class="menu__block-title" id="fresh">Фреш</h2>
+            <div class="menu__block-wrapper">
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Фреш Апельсиновый</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/orange_fresh.jpg" alt="orange fresh">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">300 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">500 мл</span><br>
+                      <span class="menu__item-price">290</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /orange fresh -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Фреш Грейпфрутовый</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/grapefruit_fresh.jpg" alt="grapefruit fresh">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">300 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">500 мл</span><br>
+                      <span class="menu__item-price">290</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /grapefruit fresh  -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Фреш Микс</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/mix_fresh.jpg" alt="mix fresh">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">300 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">500 мл</span><br>
+                      <span class="menu__item-price">290</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /mix fresh -->
+            </div>
+          </div>
+          <!-- /menu fresh -->
+
+          <div class="menu__block">
+            <h2 class="menu__block-title" id="season">Сезонное</h2>
+            <div class="menu__block-wrapper">
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Заводной Апельсин</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/orange.jpg" alt="orange">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /orange -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Матча Смородина</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/matcha_currant.jpg" alt="matcha currant">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">350 мл</span><br>
+                      <span class="menu__item-price">190</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">450 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /matcha currant  -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Краш</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/crash.jpg" alt="crash">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">300 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">500 мл</span><br>
+                      <span class="menu__item-price">290</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /crash -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Пломбир Дыня</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/melon_icecream.jpg" alt="melon icecream">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">300 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">500 мл</span><br>
+                      <span class="menu__item-price">290</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /melon icecream -->
+              <div class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <h3 class="menu__item-title">Яблочный Латте</h3>
+                  <div class="menu__item-image-block">
+                    <img class="menu__item-image" src="img/drinks/latte_apple.jpg" alt="latte apple">
+                  </div>
+                  <div class="menu__item-info">
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">300 мл</span><br>
+                      <span class="menu__item-price">240</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                    <div class="menu__item-price-block">
+                      <span class="menu__item-volume">500 мл</span><br>
+                      <span class="menu__item-price">290</span>
+                      <span class="menu__item-rub">₽</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- /latte apple -->
+            </div>
+            <!-- /menu__block-wrapper -->
+          </div>
+          <!-- /menu season-->
+        </div>
+        <!-- menu__list-wrapper -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /menu list -->
+  </section>
+  <!-- /menu -->
+
+  <section class="about">
+    <h2 class="section-title">О нас</h2>
+    <!-- /about title -->
+    <div class="about__block">
+      <div class="container">
+        <div class="about__wrapper">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
+  <section class="gallery">
+    <h2 class="section-title">Галерея</h2>
+    <!-- /gallery title -->
+    <div class="gallery__block">
+      <div class="container">
+        <div class="gallery__wrapper">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /gallery -->
+
+  <section class="contact">
+    <h2 class="section-title">Контакты</h2>
+    <!-- /contacts title -->
+    <div class="contacts__block">
+      <div class="container">
+        <div class="contacts__wrapper">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /contacts -->
+
+  <section class="stock">
+    <h2 class="section-title">Акции</h2>
+    <!-- /stock title -->
+    <div class="stock__block">
+      <div class="container">
+        <div class="stock__wrapper">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /stock -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/test_script.js"></script>
+</body>
+
+</html>
