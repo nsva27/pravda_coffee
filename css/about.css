@@ -1,3 +1,37 @@
+.section-title__about_active {
+  box-shadow: 0px 2px 15px #44444444;
+  background-color: #c1ce56;
+}
+
+.about {
+  background-color: #d7e090;
+}
+
+.about__block {
+  display: flex;
+  align-items: center;
+}
+
+.about__img {
+  display: inline-block;
+  width: 600px;
+}
+
+.about__name {
+  font-size: 30px;
+  font-weight: 800;
+  color: #000;
+}
+
+.about__text {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 100;
+  text-align: right;
+  color: #4c4c4cb5;
+  font-style: italic;
+}
+
 .about {
   background-color: #c0ce55;
 }
