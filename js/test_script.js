@@ -181,6 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+
   // Добавить класс активности пункту навигации, если мы находимся в рамках блока, соответсвующего ему
   function checkNavItemBuScroll() {
     for (let i = 0; i < sections.length; i++) {

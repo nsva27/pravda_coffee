@@ -2,6 +2,7 @@
 @import url(main.css);
 @import url(menu.css);
 @import url(menu_list.css);
+@import url(about.css);
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
@@ -83,6 +84,7 @@ body {
 .section-title {
   margin-top: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .gallery {
@@ -90,10 +92,10 @@ body {
   background-color: #c95e5e;
 }
 
-.about {
+/* .about {
   height: 600px;
   background-color: #9dcb59;
-}
+} */
 
 .contact {
   height: 200px;
