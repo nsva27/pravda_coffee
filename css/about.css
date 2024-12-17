@@ -39,7 +39,7 @@
   right: 6px;
 }
 
-.about__text {}
+/* .about__text {} */
 
 .about__text_bold {
   font-weight: 900;
@@ -103,9 +103,9 @@
   right: 10px;
 }
 
-.about__block-title {}
+/* .about__block-title {} */
 
-.about__text_beans {}
+/* .about__text_beans {} */
 
 .about__beans_star {
   width: 500px;
@@ -120,9 +120,9 @@
 }
 
 /* about__block_equipment */
-.about__block_equipment {}
+/* .about__block_equipment {} */
 
-.about__text_equipment {}
+/* .about__text_equipment {} */
 
 .about__img_equipment {
   width: 550px;
