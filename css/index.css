@@ -5,8 +5,12 @@
 @import url(about.css);
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'golos-text', sans-serif;
+  src: url(/fonts/golos-text_vf.ttf);
+}
 
+/* basic */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -24,10 +28,10 @@ p {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
-  font-size: 14px;
+  font-family: 'golos-text', sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 0;
 }
 
@@ -39,15 +43,19 @@ body {
 
 /* navigation */
 .nav {
+  font-size: 14px;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .nav__item {
-  padding: 12px 22px;
   text-decoration: none;
+  padding: 12px 12px 10px 13px;
   border-radius: 32px;
+  margin-right: 60px;
+
   transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
 }
 
@@ -57,7 +65,7 @@ body {
 
 /* buttons */
 .btn {
-  padding: 16px 28px 18px 28px;
+  padding: 16px 28px 19px 28px;
   text-decoration: none;
   color: #FFFFFF;
   background-color: rgb(227, 114, 0);
@@ -91,11 +99,6 @@ body {
   height: 400px;
   background-color: #c95e5e;
 }
-
-/* .about {
-  height: 600px;
-  background-color: #9dcb59;
-} */
 
 .contact {
   height: 200px;

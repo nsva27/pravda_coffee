@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     mainSection = document.querySelector('.main'),
 
     menuSections = document.querySelectorAll('.menu'),
-    menuNavBar = document.querySelector('.menu__navbar'),
+    menuNavBarWrapper = document.querySelector('.menu__navbar-wrapper'),
     menuNavParent = document.querySelector('.menu__nav'),
     menuNavItems = document.querySelectorAll('.menu__nav-item'),
 
-    sectionTitles = document.querySelectorAll('.section-title'),
+    // sectionTitles = document.querySelectorAll('.section-title'),
     sections = document.querySelectorAll('section');
 
   // Изменить конфигурацию шапки сайта
@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Изменить логотип в шапке сайта
   function changeLogoImage() {
     if (header.classList.contains('header_short')) {
-      headerLogoImage.setAttribute('src', 'img/logo_white_symbol.png');
+      headerLogoImage.setAttribute('src', 'img/header/logo_white_symbol.png');
     } else {
-      headerLogoImage.setAttribute('src', 'img/logo_white.png');
+      headerLogoImage.setAttribute('src', 'img/header/logo_white.png');
     }
   }
 
@@ -57,21 +57,22 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.add('header_short');
       changeHeaderNavConfig();
       changeLogoImage();
-      menuNavBar.classList.add('menu__navbar_shaddow');
+      menuNavBarWrapper.classList.remove('menu__navbar-wrapper_hidden');
+      menuNavParent.classList.remove('menu__nav_hidden')
     } else if (document.documentElement.scrollTop > mainSection.offsetHeight - 80 && headerWrapper.offsetWidth < 960) {
       header.classList.add('header_short');
       headerWrapper.classList.add('header__wrapper_short');
       header.classList.add('header_short');
       changeHeaderNavConfig();
       changeLogoImage();
-      menuNavBar.classList.add('menu__navbar_shaddow');
+      menuNavBarWrapper.classList.remove('menu__navbar-wrapper_hidden');
     } else {
       header.classList.remove('header_short');
       headerWrapper.classList.remove('header__wrapper_short');
       header.classList.remove('header_short');
       changeHeaderNavConfig();
       changeLogoImage();
-      menuNavBar.classList.remove('menu__navbar_shaddow');
+      menuNavBarWrapper.classList.add('menu__navbar-wrapper_hidden');
     }
   }
 
@@ -89,15 +90,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         for (let i = 0; i < sections.length; i++) {
           if (btn.getAttribute('data-to') === sections[i].getAttribute('id') && btn === target) {
-            const titlePosition = sections[i].getBoundingClientRect().top;
+            const sectionTop = sections[i].getBoundingClientRect().top;
 
             if (buttons === headerNavItems) {
               window.scrollTo({
-                top: titlePosition + document.documentElement.scrollTop - 60
+                top: sectionTop + document.documentElement.scrollTop - 60
               });
             } else {
               window.scrollTo({
-                top: titlePosition + document.documentElement.scrollTop - 100
+                top: sectionTop + document.documentElement.scrollTop - 100
               });
             }
           }
@@ -106,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  scrollToSection(headerNavItems, sectionTitles);
+  scrollToSection(headerNavItems, sections);
 
   // Убрать класс активности для всех элементов навигации
   function hideHeaderTabMarker() {
@@ -193,6 +194,39 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+
+  // 'About' section slider
+  const sliderImages = document.querySelectorAll('.slider__img');
+  const controlls = document.querySelectorAll('.controlls');
+  let currentIndex = 0;
+
+  function showImage(index) {
+    sliderImages[currentIndex].classList.remove('slider__img_active');
+    sliderImages[index].classList.add('slider__img_active');
+    currentIndex = index;
+  }
+
+  controlls.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      if (event.target.classList.contains('prev')) {
+        let index = currentIndex - 1;
+
+        if (index < 0) {
+          index = sliderImages.length - 1;
+        }
+        showImage(index);
+      } else if (event.target.classList.contains('next')) {
+        let index = currentIndex + 1;
+
+        if (index >= sliderImages.length) {
+          index = 0;
+        }
+        showImage(index);
+      }
+    });
+  });
+
+  showImage(currentIndex);
 
   // Отслеживаем скролл и добавляем класс активности пункту навигации, если попали в поле определенного блока
   // window.addEventListener('scroll', checkNavItemBuScroll);
