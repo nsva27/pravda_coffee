@@ -55,7 +55,6 @@
 
 .menu__item-title {
   padding: 20px 0 0 20px;
-  font-size: 18px;
   font-weight: 600;
   color: #212121;
 }
@@ -102,13 +101,11 @@
 }
 
 .menu__item-price {
-  font-size: 18px;
   font-weight: 800;
   color: #212121;
 }
 
 .menu__item-rub {
-  font-size: 18px;
   font-weight: 800;
   color: #212121;
 }
